@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        model-viewer {
+            width: 100vw;
+            height: 100vh;
+            display: block;
+        }
+ 
+    </style>
+</head>
+<body>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <model-viewer
+        src="./models/hat.glb"
+        alt="A 3D hat"
+        auto-rotate
+        camera-controls>
+    </model-viewer>
+
+    
+</body>
+</html>
