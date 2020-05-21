@@ -19,14 +19,20 @@
       }
       #unityContainer {
         height: 100vh !important;
-        width: 100vh !important;
+        width: 177vh !important;
         position: relative;
         transform: translate(-50%, 0);
         left: 50%;
         background: black;
         overflow: hidden;
       }
-      
+      @media screen and (orientation:portrait) { 
+        #unityContainer {
+        width: 100vh !important;
+        height: 100vh !important;
+        position: relative;
+      }
+      }
     </style>
   </head>
   <body>
