@@ -9,28 +9,27 @@
       UnityLoader.instantiate("unityContainer", "Build/Builds.json");
     </script>
     <style>
-      body {
-        text-align: center;
+      html, body {
         background: #231f20;
         margin: 0;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden !important;
       }
       #unityContainer {
-        width: 100vw;
-        height: 56vw;
-        margin: auto !important;
+        height: 100vh !important;
+        width: 177vh !important;
+        position: relative;
+        transform: translate(-50%, 0);
+        left: 50%;
         background: black;
-        border-radius: 25px;
         overflow: hidden;
-      }
-      @media (min-aspect-ratio: 16/9) {
-        #unityContainer {
-          height: 100vh;
-          width: 177vh;
-        }
       }
     </style>
   </head>
   <body>
     <div id="unityContainer"></div>
+  
   </body>
 </html>
